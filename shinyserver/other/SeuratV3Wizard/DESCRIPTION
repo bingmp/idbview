@@ -1,0 +1,27 @@
+Package: SeuratV3Wizard
+Title: User Interface to Seurat (Single Cell) library in R Shiny
+Version: 3.2.0.0000
+Authors@R: person("Ayman", "Yousif", email = "ay21@nyu.edu", role = c("aut", "cre"))
+Description: User Interface to Seurat v3 (Single Cell) in R Shiny
+Depends: R (>= 3.4)
+License: What license is it under?
+Encoding: UTF-8
+Imports: shinydashboard (>= 0.6.1), shinyjs (>= 1.0), shinyBS (>=
+        0.61), shinycssloaders (>= 0.2.0), DT (>= 0.2), shiny (>=
+        1.0.5), Seurat (>= 3.0.0), dplyr, Matrix, V8, sodium,
+        rmarkdown, reticulate, uuid
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: seuratv3wizard
+RemoteUsername: nasqar
+RemoteRef: HEAD
+RemoteSha: 0da7fd7b905563d66be19b765b2ef00dc3fc7872
+GithubRepo: seuratv3wizard
+GithubUsername: nasqar
+GithubRef: HEAD
+GithubSHA1: 0da7fd7b905563d66be19b765b2ef00dc3fc7872
+NeedsCompilation: no
+Packaged: 2023-05-04 13:49:13 UTC; shiny
+Author: Ayman Yousif [aut, cre]
+Maintainer: Ayman Yousif <ay21@nyu.edu>
+Built: R 4.2.2; ; 2023-05-04 13:49:27 UTC; unix

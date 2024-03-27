@@ -1,0 +1,24 @@
+en,cn
+English,中文
+Dataset of pediatric respiratory disease,儿童呼吸疾病数据集
+Expression data of selected gene,基因表达数据
+Show Data,展示数据
+Analyze Data,分析数据
+group: control vs case,对照与实验组
+var column,var 列
+group or var,比较列选择
+age and genes,基因、年龄
+basic,基础
+title,标题
+axis.title,轴标题
+axis.text,轴文本
+axis.ticks,轴刻度
+legend.title,图例标题
+legend.text,图例文本
+choose,选择
+direction,方向
+download table,下载表格
+download plot,下载图形
+plot.weight,下载图宽
+plot.high,下载图高
+plot.dpi,图分辨率

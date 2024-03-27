@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as l}from"./index-CPS2Qe5a.js";const c={},r={src:"https://shiny.chcmu.com.cn/dataclinic/WHOMortalityDatabase",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function a(o,s){return t(),l("iframe",r)}const u=e(c,[["render",a]]);export{u as default};

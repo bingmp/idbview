@@ -1,0 +1,1 @@
+import{_ as e,o as l,c as r}from"./index-S2yEu14Y.js";const c={},o={src:"./shinyserver/dataclinic/ncov2019",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function s(t,n){return l(),r("iframe",o)}const u=e(c,[["render",s]]);export{u as default};

@@ -1,0 +1,179 @@
+en,cn
+炳明的 shiny 工具|Bingm's shinytools
+CHCMU,重医儿院
+Bingm,炳明
+English,中文
+Welcome to ShinyTools,欢迎使用 ShinyTools
+Welcome to GraphMed,欢迎使用 GraphMed
+Medical data visualization,医学数据可视化
+Help,使用说明
+Contact us,联系我们
+FAQ,常见问题
+Wechat,微信
+Alipay,支付宝
+Elisa analysis,Elisa 分析
+Q-PCR analysis,Q-PCR 结果分析
+GeneID deduplication,基因去重复
+Change gene ID,基因 ID 转换
+Heatmap,热图
+KEGG analysis,KEGG 分析
+gseaKEGG analysis,GSAE 分析(KEGG 库)
+GSEA analysis,GSEA 分析
+GO analysis,GO 分析
+gseaGO analysis,GSEA 分析(GO库)
+ORA analysis,ORA 分析
+One-way difference test,单因素差异分析
+Simple forestplot,简易森林图
+Logistics regression,Logistics 回归
+Two-variable correlation,两变量相关性
+ChinaMap,中国地图
+Input data,输入数据
+Input file,输入文件
+Smaple data,参考数据
+Subbore (with/without),副孔(有/无)
+Significant digits,有效位数
+Fitting plot,拟合图形
+DownloadPlot,下载图形
+plot.weight,下载图宽
+plot.high,下载图高
+plot.dpi,分辨率
+Map data,地图数据
+Data sources: ,数据来源：
+1st adcode,地区1 adcode
+2nd adcode,地区2 adcode
+1st subarea,地区1 子区域
+2nd subarea,地区2 子区域
+Graphic labels,图形标签
+title,标题
+title:,标题：
+legend,图例
+color type,颜色
+Label font size,标签字号
+Low-value color,低值颜色
+Middle-value color,中值颜色
+High-value color,高值颜色
+Latitude and longitude lines,经纬度线
+Parameter settings,参数设置
+Internal reference,内参基因
+Control sample,对照样本
+Result selection,结果选择
+Target gene,目的基因
+Start drawing,开始画图
+Express graphics,表达图形
+Deduplication,去重复
+Result,结果
+Result data,结果数据
+method,方法
+Species: ,物种：
+Species,物种
+ID_geneName,ID列基因
+to_geneName,转换基因
+Expression matrix,表达矩阵
+Group information,分组信息
+GeneID,基因列
+pvalue column,pvalue 列
+padj column,padj 列
+logFC column,logFC 列
+matrix,矩阵
+group,分组
+Plot,图形
+Boxplot,箱图
+Select gene,选择基因
+label.x,p 值 x 坐标
+label.y,p 值 y 坐标
+Theme,主题
+Annotation_row,行注释
+Annotation_col,列注释
+Set row parameters,设置行参数
+rowname,行名
+row_cluster,行聚类
+add anno_row,添加行注释
+anno_row1,行注释1
+anno_row2,行注释2
+Set col parameters,设置列参数
+colname,列名
+col_cluster,列聚类
+add anno_col,添加列注释
+anno_col1,列注释1
+anno_col,列注释2
+Standardization,标准化
+display_numbers,显示数值
+angle_col,列名角度
+Graphic color,图形颜色
+Matrix rows,下载矩阵行数
+Control group,对照组
+Case group,实验组
+Filter low-expression genes(rowSum ≥),过滤低表达基因(矩阵每行和≥)
+Standardized method,标准化方式：
+Gene sequencing,基因排序方式
+Graphic selection,图形选择
+Plot parameters,图形参数
+pvalue,P 值
+padj,矫正 P 值
+Top genes of heatmap,热图基因数
+Top labels of volcano,火山图标签数
+Adjust method,矫正方式
+Differential genes,差异基因
+Input data type,输入数据类型
+Pathway pvalue,通路 P 值
+Pathway padj,通路 P.adj
+Genes of enrich,富集基因
+Number of pathways,通路数目
+Select pathways,通路选择
+Matrix Parameters,差异矩阵参数
+Enrich parameters,富集参数
+Pathway Genes,通路基因
+Forestplot,森林图
+y: Dicategorical var,y：二分类
+x1: measurement,x1：计量
+x2: count,x2：计数
+Filter variables,筛选变量：
+background color,背景颜色
+vline color,竖线颜色
+errorbarh color,横线颜色
+Plot data,图形数据
+Logistics result,Logistics 结果
+Forestplot data,Forestplot 数据
+alternative:,单边/双边检验：
+test methods,检验方法
+dot line size,点线大小
+scatter:,散点：
+error bars:,误差条：
+boxplot lines:,箱图线条：
+violin lines:,小提琴图线条：
+star size:,星号大小：
+ylab,y轴标签
+xlab,x轴标签
+difference bar:,显示横杠：
+paired or not:,是否配对：
+correction method,校正方法
+number of groups:,样本组数：
+(Correction method for comparison when there are differences between multiple groups),（多组存在差异时，两两比较的校正方法）
+Two groups comparison,两两比较
+dot line color,点线颜色
+ fill color,填充颜色
+facet or not,是否分面
+Fit equation,拟合方程
+Fitting mode,拟合方式
+Confidence interval,置信区间
+Correlation,相关性
+plot style,图像风格
+Volcano plot,火山图
+volcano theme,火山图主题
+Survival analysis,生存分析
+time,时间
+status,状态
+risk.table,风险表
+add.all,添加整体
+median.line,中位线
+palette,调色板
+outcome,结局
+select variable,选择变量
+node,节点
+variable,变量
+facet,分面
+sensitivity,灵敏度
+ROC curve,ROC 曲线
+merge variables,合并变量
+Continuous variables,连续变量
+Categorical variables,分类变量
