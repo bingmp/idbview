@@ -1,9 +1,6 @@
 
-# library('shiny')
 library('tidyr')
-# library('DT')
 library('ggplot2')
-# library('shinydashboard')
 library('forecast') # time series
 library('lubridate') # for showing up time correctly
 library('scales')
@@ -185,7 +182,6 @@ server <- function(input, output, session, ...) {
         theme(legend.position = "none") + xlab(NULL) + ylab('Mortality Rate') + 
         scale_y_continuous(labels = scales::percent_format(accuracy = 2)) +
         scale_size(range=c(1,20)) + theme(axis.text.x = element_text(angle=45, hjust=1))
-      
       ggplotly(p,tooltip = c("x","label","confirm"))
       
     })
@@ -234,7 +230,7 @@ server <- function(input, output, session, ...) {
       
     }) 
     
-    output$growth_rate <- renderPlotly ({
+    output$growth_rate <- renderPlot({
       d2 <- data$global
       smooth_confirm = stats::filter(d2$cum_confirm, rep(1/10,10), sides=1 )
       #seq(from =  nrow(J), to = 1,-7) %>% rev -> idx
@@ -259,12 +255,18 @@ server <- function(input, output, session, ...) {
       }
       
       dd$rate <- percent(dd$growth_rate)
-      p = ggplot(dd,aes(x=country,y= growth_rate,color = growth_rate,size = cum_confirm, label = rate, alpha = .6)) + geom_point() +
+      p <- ggplot(dd,aes(x=country,y= growth_rate,color = growth_rate,
+                         size = cum_confirm, label = rate, alpha = .6)) + 
+        geom_point() +
         scale_color_gradientn(colors=c('green',"darkgreen","orange","firebrick","red")) + 
-        scale_size_continuous() + guides(alpha = F) +
-        theme_bw() + scale_y_continuous(labels = scales::percent_format(accuracy = 2)) +
-        theme(axis.text.x = element_blank(),axis.ticks.x = element_blank()) + labs(title = "Current Growth Rate")
-      ggplotly(p,tooltip = c("x","label","size"))
+        scale_size_continuous() + 
+        guides(alpha = F) +
+        theme_bw() + 
+        scale_y_continuous(labels = scales::percent_format(accuracy = 2)) +
+        theme(axis.text.x = element_blank(),axis.ticks.x = element_blank()) +
+        labs(title = "Current Growth Rate")
+      # plotly::ggplotly(p,tooltip = c("x","label","size"))
+      plot(p)
     })
     ### end
   })
