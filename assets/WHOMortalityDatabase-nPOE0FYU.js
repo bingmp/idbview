@@ -1,0 +1,1 @@
+import{_ as e,o as l,c as t}from"./index-ix3N5d8b.js";const r={},a={src:"./idbview/dataclinic/WHOMortalityDatabase",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function c(o,s){return l(),t("iframe",a)}const u=e(r,[["render",c]]);export{u as default};

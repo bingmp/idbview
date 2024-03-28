@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as l}from"./index-ix3N5d8b.js";const c={},o={src:"./idbview/other/SeuratV3Wizard/shiny/",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function t(s,n){return r(),l("iframe",o)}const u=e(c,[["render",t]]);export{u as default};

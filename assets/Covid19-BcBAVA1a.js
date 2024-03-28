@@ -1,0 +1,1 @@
+import{_ as e,o as l,c}from"./index-ix3N5d8b.js";const r={},o={src:"./idbview/dataclinic/ncov2019",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function t(n,s){return l(),c("iframe",o)}const u=e(r,[["render",t]]);export{u as default};
