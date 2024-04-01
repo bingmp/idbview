@@ -1,1 +1,0 @@
-import{_ as e,o as c,c as l}from"./index-CPS2Qe5a.js";const o={},r={src:"https://shiny.chcmu.com.cn/dataclinic/ncov2019",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function t(n,s){return c(),l("iframe",r)}const u=e(o,[["render",t]]);export{u as default};

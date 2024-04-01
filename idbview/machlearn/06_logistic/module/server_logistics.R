@@ -176,6 +176,7 @@ logisticsServer <- function(id) {
                       }
                       
                       p <- ggplot_plot(p,input)+
+                        theme_plot.title(input)+
                         theme_axis.title(input) +
                         theme_axis.text(input) +
                         theme_axis.ticks(input) +

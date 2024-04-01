@@ -2,12 +2,12 @@
 library('shiny') 
 library('bs4Dash')
 library('shinyWidgets')
-# library('shiny.i18n')
+library('shiny.i18n')
 
-source("module/ui_limma.R",encoding = "utf-8")
+source("module/limma_ui.R",encoding = "utf-8")
 
 # File with translations
-lang <- shiny.i18n::Translator$new(translation_csvs_path = "./lang/info/")
+lang <- Translator$new(translation_csvs_path = "./lang/info/")
 lang$set_translation_language("en") # here you select the default translation to display
 
 ui <- bs4DashPage(
@@ -37,9 +37,9 @@ server <- function(input, output, session) {
     else{
       shiny.i18n::update_lang('cn' )
     }
+    
   })
-  
-  source("module/server_limma.R")
+  source("module/limma_server.R")
   limmaServer("limma")
 }
 

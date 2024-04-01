@@ -1,0 +1,19 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+
+Attaching package: ‘bs4Dash’
+
+The following objects are masked from ‘package:shiny’:
+
+    actionButton, column, insertTab, navbarMenu, tabsetPanel
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+Warning in load_local_config(translation_csv_config) :
+  You didn't specify config translation yaml file. Default settings are used.
+Warning in load_local_config(translation_csv_config) :
+  You didn't specify config translation yaml file. Default settings are used.
+
+Listening on http://127.0.0.1:39609
+Loading required package: DBI

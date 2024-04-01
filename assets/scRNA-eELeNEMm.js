@@ -1,1 +1,0 @@
-import{_ as e,o as r,c}from"./index-CPS2Qe5a.js";const l={},t={src:"https://shiny.chcmu.com.cn/other/SeuratV3Wizard/shiny/",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function o(s,n){return r(),c("iframe",t)}const u=e(l,[["render",o]]);export{u as default};

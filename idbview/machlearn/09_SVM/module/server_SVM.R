@@ -121,12 +121,6 @@ svmServer <- function(id) {
                     return(df_test)
                   })
                   
-                  # download plot: pdf, png, jpeg, tiff, rds
-                  output$pdf0  <- eval(parse(text = output_plot[1] ))
-                  output$png0  <- eval(parse(text = output_plot[2] ))
-                  output$jpeg0 <- eval(parse(text = output_plot[3] ))
-                  output$tiff0 <- eval(parse(text = output_plot[4] ))
-                  output$rds0  <- eval(parse(text = output_plot[5] ))
                   
                   output$df_pref.train<- DT::renderDataTable( df_pref.train())
                   output$table_pref.train  <- downloadHandler(filename="pref.train.csv",
@@ -183,6 +177,12 @@ svmServer <- function(id) {
                   })
                   output$plot <- renderPlot( plot() )
                   
+                  # download plot: pdf, png, jpeg, tiff, rds
+                  output$pdf0  <- eval(parse(text = output_plot[1] ))
+                  output$png0  <- eval(parse(text = output_plot[2] ))
+                  output$jpeg0 <- eval(parse(text = output_plot[3] ))
+                  output$tiff0 <- eval(parse(text = output_plot[4] ))
+                  output$rds0  <- eval(parse(text = output_plot[5] ))
                   
                 })
                 

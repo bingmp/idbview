@@ -1,1 +1,0 @@
-import{_ as e,o as l,c as r}from"./index-S2yEu14Y.js";const t={},a={src:"./shinyserver/dataclinic/WHOMortalityDatabase",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function c(o,s){return l(),r("iframe",a)}const u=e(t,[["render",c]]);export{u as default};

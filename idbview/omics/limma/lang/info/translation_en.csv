@@ -19,10 +19,9 @@ Parameter settings,参数设置
 pvalue,P 值
 padj,矫正 P 值
 Gene sequencing,基因排序方式
-order method,排序方式
-top genes,热图基因数
-top labels,基因标签数
-theme,主题
+Top genes of heatmap,热图基因数
+Top labels of volcano,火山图标签数
+volcano theme,火山图主题
 Low-value color,低值颜色
 Middle-value color,中值颜色
 High-value color,高值颜色
