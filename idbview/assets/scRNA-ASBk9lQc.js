@@ -1,1 +1,0 @@
-import{_ as e}from"./index-BLDSZHBS.js";import{o as r,c}from"./.pnpm-BcCp6Nip.js";const l={},o={src:"https://db.chcmu.com.cn/idbview/other/SeuratV3Wizard/shiny/",allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"};function t(s,n){return r(),c("iframe",o)}const f=e(l,[["render",t]]);export{f as default};

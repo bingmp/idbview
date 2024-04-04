@@ -1,1 +1,0 @@
-import{u as l}from"./shiny-CbT69HWM.js";import{d as r,o,c as s,u as t}from"./.pnpm-BcCp6Nip.js";const n=["src"],_=r({__name:"showTools",setup(u){let e=l();return(c,a)=>(o(),s("iframe",{src:t(e).src,allowfullscreen:"true",webkitallowfullscreen:"true",mozallowfullscreen:"true",oallowfullscreen:"true",msallowfullscreen:"true"},null,8,n))}});export{_ as default};

@@ -6,3 +6,4 @@ mysql_con <- paste0("dbConnect(MySQL(),",
                     "password='pbm242813',",
                     "dbname='idbview',",
                     "host = 'mysql')")
+
