@@ -23,7 +23,7 @@ docker pull pengbm/rshiny
 
 docker run --name rshiny -d \
 -e USER=bingm \
--e PASSWORD=123456 \
+-e PASSWORD=yourPassword \
 -e ROOT=TRUE \
 -e PERUSER=FALSE \
 --network test-network --network-alias rshiny \
@@ -33,7 +33,7 @@ pengbm/rshiny:v1
 ```
 1.2 details:  
 shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
-rstudio-server: ip:8787; uer: bingm; password: 123456
+rstudio-server: ip:8787; uer: bingm; password: yourPassword
 
 
 - 2 Docker mysql install  
@@ -48,7 +48,7 @@ docker run -d --name mysql \
 --cpus=2  \
 -p 3306:3306 \
 -e TZ=Asia/Shanghai \
--e MYSQL_ROOT_PASSWORD=123456 \
+-e MYSQL_ROOT_PASSWORD=yourPassword \
 mysql:5.7
 ```
 
