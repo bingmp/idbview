@@ -16,9 +16,14 @@ Mysql: mysql5.7
 
 #### Docker install rstudio-server and shiny-server
 
+```sh
+# create a docker network for rshiny and mysql.
+docker network create docker-network
+```
 - 1 Docker rshiny install
 
 ``` shell
+# https://hub.docker.com/r/pengbm/rshiny
 docker pull pengbm/rshiny:v1
 
 docker run --name rshiny -d \
@@ -26,13 +31,13 @@ docker run --name rshiny -d \
 -e PASSWORD=yourPassword \
 -e ROOT=TRUE \
 -e PERUSER=FALSE \
---network test-network --network-alias rshiny \
+--network docker-network --network-alias rshiny \
 -p 3838:3838 -p 8787:8787 \
--v /home/pengbm/home/shiny:/home/bingm/ShinyApps \
 pengbm/rshiny:v1
 ```
 1.2 details:  
 shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
+your can remove "assets/" folder and "index.html" file in ~/ShinyApps/
 
 rstudio-server: ip:8787;  user: bingm;  password: yourPassword
 
@@ -45,11 +50,16 @@ rstudio-server: ip:8787;  user: bingm;  password: yourPassword
 docker pull mysql:5.7
 
 docker run -d --name mysql \
---network test-network --network-alias mysql \
+--network docker-network --network-alias mysql \
 -p 3306:3306 \
 -e TZ=Asia/Shanghai \
 -e MYSQL_ROOT_PASSWORD=yourPassword \
 mysql:5.7
+
+# create acccount "idbview" in mysql;
+# create database "idbview" in mysql;
+# upload data to mysql.
+# idbview.sql file at: https://db.chcmu.com.cn/idbview.sql
 ```
 
 2.2 details  
