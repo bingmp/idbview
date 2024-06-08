@@ -16,7 +16,7 @@ Mysql: mysql5.7
 
 #### Docker install rstudio-server and shiny-server
 
--   Docker install
+- 1 Docker rshiny install
 
 ``` shell
 docker pull pengbm/rshiny
@@ -31,11 +31,13 @@ docker run --name rshiny -d \
 -v /home/pengbm/home/shiny:/home/bingm/ShinyApps \
 pengbm/rshiny:v1
 ```
+1.2 details:  
 shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
 rstudio-server: ip:8787; uer: bingm; password: 123456
 
--   Docker install mysql
 
+- 2 Docker mysql install
+2.1 install  
 ``` shell
 # add user: shiny
 # add 3 file for mysql: 
@@ -43,7 +45,10 @@ rstudio-server: ip:8787; uer: bingm; password: 123456
 # /home/shiny/mysql/conf
 # /home/shiny/mysql/log
 
-# install mysql and mount file.
+# install mysql.
+
+docker pull mysql:5.7
+
 docker run -d --name mysql \
 --network test-network --network-alias mysql \
 --cpus=2  \
@@ -56,7 +61,34 @@ docker run -d --name mysql \
 mysql:5.7
 ```
 
--   vue code
+2.2 details  
+```r
+# file: "~ShinyApps/gloabl/server/conMysql.R"
+library('RMySQL')
+mysql_con <- paste0("dbConnect(MySQL(),",
+                    "user='idbview',",
+                    "port=3306,",
+                    "password='yourPassword',",
+                    "dbname='idbview',",
+                    "host = 'mysql')")
+                    
+# dbConnect(MySQL(), user = 'idbview', password = 'yourPassword', dbname = 'idbview',
+# host = 'mysql')
+```                 
+2.3 our demo mysql connect  
+```r
+library('RMySQL')
+mysql_con <- paste0("dbConnect(MySQL(),",
+                    "user='idbview',",
+                    "port=20093,",
+                    "password='bingmP242813!',",
+                    "dbname='idbview',",
+                    "host = 'sh-cynosdbmysql-grp-lpgiq2lw.sql.tencentcdb.com')")
+# dbConnect(MySQL(), user = 'idbview', password = 'bingmP242813!', dbname = 'idbview',
+# host = 'sh-cynosdbmysql-grp-lpgiq2lw.sql.tencentcdb.com')
+```
+
+- 3 vue code
 
 ``` shell
 git clone https://github.com/bingmp/rVue.git
