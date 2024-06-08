@@ -31,6 +31,8 @@ docker run --name rshiny -d \
 -v /home/pengbm/home/shiny:/home/bingm/ShinyApps \
 pengbm/rshiny:v1
 ```
+shiny-server: ip:3838; (or https://hiplotdev.hiplot.com.cn)  
+rstudio-server: ip:8787; uer: bingm; password: 123456
 
 -   Docker install mysql
 
