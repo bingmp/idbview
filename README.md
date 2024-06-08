@@ -65,7 +65,7 @@ idbview.sql file at: https://db.chcmu.com.cn/idbview.sql
 
 2.2 details  
 ```r
-# file: "~/ShinyApps/global/server/conMysql.R"
+# mysql connect setting file: "~/ShinyApps/global/server/conMysql.R"
 library('RMySQL')
 mysql_con <- paste0("dbConnect(MySQL(),",
                     "user='idbview',",
@@ -77,7 +77,7 @@ mysql_con <- paste0("dbConnect(MySQL(),",
 # dbConnect(MySQL(), user = 'idbview', password = 'yourPassword', dbname = 'idbview',
 # host = 'mysql')
 ```                 
-2.3 our demo mysql connect  
+2.3 or you can use our demo mysql connect  
 ```r
 library('RMySQL')
 mysql_con <- paste0("dbConnect(MySQL(),",
