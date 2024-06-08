@@ -2,15 +2,15 @@
 
 #### Introduction
 
-**idbview** is a respiratory disease database that integrates Rshiny-based data analysis and visualization tools.
+**idbview** is a respiratory disease database that integrates Rshiny-based data analysis and visualization tools.  
 
 #### Architecture
 
-Front-end: HTML, CSS, JavaScript, and vue3
+Front-end: HTML, CSS, JavaScript, and vue3  
 
-Back-end: R
+Back-end: R  
 
-Mysql: mysql5.7
+Mysql: mysql5.7  
 
 # Install
 
@@ -62,8 +62,8 @@ cd rVue
 pnpm run install
 pnpm run dev
 ```
-font-end data are in "rVue/src/assets"
-font-end api are in "rVue/src/api"
+Front-end data are in "rVue/src/assets"  
+Front-end api are in "rVue/src/api"
 
 #### Instructions
 
