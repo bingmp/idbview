@@ -60,8 +60,8 @@ mysql:5.7
 # create acccount "idbview" in mysql;
 # create database "idbview" in mysql;
 # upload data to mysql.
-# idbview.sql file at: https://db.chcmu.com.cn/idbview.sql
 ```
+idbview.sql file at: https://db.chcmu.com.cn/idbview.sql
 
 2.2 details  
 ```r
