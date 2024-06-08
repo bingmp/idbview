@@ -46,7 +46,6 @@ docker pull mysql:5.7
 
 docker run -d --name mysql \
 --network test-network --network-alias mysql \
---cpus=2  \
 -p 3306:3306 \
 -e TZ=Asia/Shanghai \
 -e MYSQL_ROOT_PASSWORD=yourPassword \
