@@ -2,7 +2,7 @@
 
 #### Introduction
 
-**idbview** is a respiratory disease database that integrates Rshiny-based data analysis and visualization tools.  
+**Idbview** a database and interactive platform for respiratory-associated disease.  
 
 #### Architecture
 
