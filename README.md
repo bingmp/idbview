@@ -36,10 +36,11 @@ docker run --name rshiny -d \
 pengbm/rshiny:v1
 ```
 1.2 details:  
-shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
-your can remove "assets/" folder and "index.html" file in ~/ShinyApps/
 
 rstudio-server: ip:8787;  user: bingm;  password: yourPassword
+your can remove "assets/" folder and "index.html" file in ~/ShinyApps/
+
+shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
 
 
 - 2 Docker mysql install  
