@@ -29,7 +29,7 @@ docker run --name rshiny -d \
 --network test-network --network-alias rshiny \
 -p 3838:3838 -p 8787:8787 \
 -v /home/pengbm/home/shiny:/home/bingm/ShinyApps \
-pengbm/rshiny
+pengbm/rshiny:v1
 ```
 
 -   Docker install mysql
