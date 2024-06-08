@@ -7,5 +7,4 @@ ui <- fluidPage(
   titlePanel("Atelectasis Data"),
   br(),
   dataTableOutput('table')
-
 )

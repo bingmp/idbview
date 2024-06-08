@@ -10,6 +10,7 @@ datasetServer <- function(id) {
         con <- eval(parse(text = mysql_con))
         dataset <- dbGetQuery(con, "SELECT * FROM all_dataset") %>% subset(method != 'NULL')
         dbDisconnect(con)
+        dataset <- dplyr::arrange(dataset,disease,size)
         return( dataset )
       })
       output$dataset <- DT::renderDataTable( dataset())

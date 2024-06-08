@@ -6,8 +6,10 @@ datasetServer <- function(id) {
     function(input, output, session) {
       dataset <- reactive({
         con <- eval(parse(text = mysql_con))
-        dataset <- dbGetQuery(con, 'SELECT * FROM all_dataset' )
+        # 筛选标准化后的数据集
+        dataset <- dbGetQuery(con, 'SELECT * FROM all_dataset' ) # %>% subset(type=='norm')
         dbDisconnect(con)
+        dataset <- dplyr::arrange(dataset,disease,-size)
         return( dataset )
       })
       output$dataset <- DT::renderDataTable( dataset())

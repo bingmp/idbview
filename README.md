@@ -19,15 +19,17 @@ Mysql: mysql5.7
 -   Docker install
 
 ``` shell
+docker pull pengbm/rshiny
+
 docker run --name rshiny -d \
 -e USER=bingm \
 -e PASSWORD=123456 \
 -e ROOT=TRUE \
 -e PERUSER=FALSE \
 --network test-network --network-alias rshiny \
--p 3839:3838 -p 8788:8787 \
+-p 3838:3838 -p 8787:8787 \
 -v /home/pengbm/home/shiny:/home/bingm/ShinyApps \
-ccr.ccs.tencentyun.com/bingmp/docker-rshiny
+pengbm/rshiny
 ```
 
 -   Docker install mysql
@@ -35,18 +37,18 @@ ccr.ccs.tencentyun.com/bingmp/docker-rshiny
 ``` shell
 # add user: shiny
 # add 3 file for mysql: 
-/home/shiny/mysql/data
-/home/shiny/mysql/conf
-/home/shiny/mysql/log
+# /home/shiny/mysql/data
+# /home/shiny/mysql/conf
+# /home/shiny/mysql/log
 
 # install mysql and mount file.
 docker run -d --name mysql \
 --network test-network --network-alias mysql \
 --cpus=2  \
--p 3308:3306 \
--v /home/shiny/mysql/data:/var/lib/mysql \
--v /home/shiny/mysql/conf:/etc/mysql \
--v /home/shiny/mysql/log:/var/log/mysql \
+-p 3306:3306 \
+# -v /home/shiny/mysql/data:/var/lib/mysql \
+# -v /home/shiny/mysql/conf:/etc/mysql \
+# -v /home/shiny/mysql/log:/var/log/mysql \
 -e TZ=Asia/Shanghai \
 -e MYSQL_ROOT_PASSWORD=123456 \
 mysql:5.7
@@ -55,10 +57,13 @@ mysql:5.7
 -   vue code
 
 ``` shell
-git clone git@gitee.com:bingmp/r-vue.git
+git clone https://github.com/bingmp/rVue.git
+cd rVue
 pnpm run install
 pnpm run dev
 ```
+font-end data are in "rVue/src/assets"
+font-end api are in "rVue/src/api"
 
 #### Instructions
 
