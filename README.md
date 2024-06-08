@@ -36,15 +36,9 @@ shiny-server: ip:3838; (or https://db.chcmu.com.cn)
 rstudio-server: ip:8787; uer: bingm; password: 123456
 
 
-- 2 Docker mysql install
+- 2 Docker mysql install  
 2.1 install  
 ``` shell
-# add user: shiny
-# add 3 file for mysql: 
-# /home/shiny/mysql/data
-# /home/shiny/mysql/conf
-# /home/shiny/mysql/log
-
 # install mysql.
 
 docker pull mysql:5.7
@@ -53,9 +47,6 @@ docker run -d --name mysql \
 --network test-network --network-alias mysql \
 --cpus=2  \
 -p 3306:3306 \
-# -v /home/shiny/mysql/data:/var/lib/mysql \
-# -v /home/shiny/mysql/conf:/etc/mysql \
-# -v /home/shiny/mysql/log:/var/log/mysql \
 -e TZ=Asia/Shanghai \
 -e MYSQL_ROOT_PASSWORD=123456 \
 mysql:5.7
@@ -63,7 +54,7 @@ mysql:5.7
 
 2.2 details  
 ```r
-# file: "~ShinyApps/gloabl/server/conMysql.R"
+# file: "~/ShinyApps/global/server/conMysql.R"
 library('RMySQL')
 mysql_con <- paste0("dbConnect(MySQL(),",
                     "user='idbview',",
