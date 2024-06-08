@@ -19,7 +19,7 @@ Mysql: mysql5.7
 - 1 Docker rshiny install
 
 ``` shell
-docker pull pengbm/rshiny
+docker pull pengbm/rshiny:v1
 
 docker run --name rshiny -d \
 -e USER=bingm \
