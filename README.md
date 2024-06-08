@@ -71,4 +71,4 @@ font-end api are in "rVue/src/api"
 
 #### Contribution
 
-1.  All the above code is built by Bingmp.
+1.  All the above code is built by Bingmp(bingmp@stu.cqmu.edu.cn).
