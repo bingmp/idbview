@@ -33,7 +33,8 @@ pengbm/rshiny:v1
 ```
 1.2 details:  
 shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
-rstudio-server: ip:8787; uer: bingm; password: yourPassword
+
+rstudio-server: ip:8787;  user: bingm;  password: yourPassword
 
 
 - 2 Docker mysql install  
