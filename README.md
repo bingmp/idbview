@@ -23,7 +23,8 @@ docker network create docker-network
 - 1 Docker rshiny install
 
 ``` shell
-# https://hub.docker.com/r/pengbm/rshiny
+# docker image detail at: https://hub.docker.com/r/pengbm/rshiny
+
 docker pull pengbm/rshiny:v1
 
 docker run --name rshiny -d \
@@ -40,7 +41,7 @@ pengbm/rshiny:v1
 rstudio-server: ip:8787;  user: bingm;  password: yourPassword
 your can remove "assets/" folder and "index.html" file in ~/ShinyApps/
 
-shiny-server: ip:3838; (or https://db.chcmu.com.cn)  
+shiny-server: ip:3838
 
 
 - 2 Docker mysql install  
@@ -61,7 +62,7 @@ mysql:5.7
 # create database "idbview" in mysql;
 # upload data to mysql.
 ```
-idbview.sql file at: https://db.chcmu.com.cn/idbview.sql
+
 
 2.2 details  
 ```r
